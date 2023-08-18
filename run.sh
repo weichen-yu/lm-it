@@ -1,0 +1,1 @@
+python ex-it.py >> ex-it-dummy-100.log 2>&1

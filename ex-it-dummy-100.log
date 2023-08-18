@@ -1,0 +1,494 @@
+2023-08-18 14:07:49.437623: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Loading checkpoint shards:   0%|          | 0/14 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/14 [00:01<00:20,  1.55s/it]Loading checkpoint shards:  14%|█▍        | 2/14 [00:03<00:18,  1.52s/it]Loading checkpoint shards:  21%|██▏       | 3/14 [00:04<00:16,  1.54s/it]Loading checkpoint shards:  29%|██▊       | 4/14 [00:06<00:15,  1.55s/it]Loading checkpoint shards:  36%|███▌      | 5/14 [00:07<00:13,  1.55s/it]Loading checkpoint shards:  43%|████▎     | 6/14 [00:09<00:12,  1.55s/it]Loading checkpoint shards:  50%|█████     | 7/14 [00:10<00:10,  1.54s/it]Loading checkpoint shards:  57%|█████▋    | 8/14 [00:12<00:09,  1.58s/it]Loading checkpoint shards:  64%|██████▍   | 9/14 [00:14<00:07,  1.59s/it]Loading checkpoint shards:  71%|███████▏  | 10/14 [00:15<00:06,  1.60s/it]Loading checkpoint shards:  79%|███████▊  | 11/14 [00:17<00:04,  1.61s/it]Loading checkpoint shards:  86%|████████▌ | 12/14 [00:18<00:03,  1.61s/it]Loading checkpoint shards:  93%|█████████▎| 13/14 [00:20<00:01,  1.61s/it]Loading checkpoint shards: 100%|██████████| 14/14 [00:21<00:00,  1.55s/it]Loading checkpoint shards: 100%|██████████| 14/14 [00:21<00:00,  1.57s/it]
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+/home/aiops/yuweichen/anaconda3/envs/lm/lib/python3.10/site-packages/transformers/generation/utils.py:1219: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use a generation configuration file (see https://huggingface.co/docs/transformers/main_classes/text_generation)
+  warnings.warn(
+generated_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+gt_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+generated_text: heard of the TV show "Penny Dreadful"? What do you know about it? ASSISTANT: Yes, I have heard of the TV show "P
+gt_text: heard of the TV show "Penny Dreadful"? What do you know about it? ASSISTANT: Yes, I have heard of the TV show "P
+generated_text: in the US? What state? Assistant: Yes, I am based in the United States. My current location is New York City, New York. USER: What is the best
+gt_text: in the US? What state? Assistant: Yes, I am based in the United States. My current location is New York City, New York. USER: What is the best
+generated_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer,
+gt_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer,
+generated_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer,
+gt_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer,
+generated_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power
+gt_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power
+generated_text: ER: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a
+gt_text: ER: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a
+generated_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power
+gt_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power
+generated_text: : What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer
+gt_text: : What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer
+generated_text: the difference between a credit note and a debit note? MERCHYNT'S MAGICAL CONTENT CALENDAR FOR CREDIT NOTE VS DE
+gt_text: the difference between a credit note and a debit note? MERCHYNT'S MAGICAL CONTENT CALENDAR FOR CREDIT NOTE VS DE
+generated_text: : What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer
+gt_text: : What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer
+generated_text: : What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer
+gt_text: : What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer
+generated_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+gt_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+generated_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer, indicating
+gt_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer, indicating
+generated_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power
+gt_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power
+generated_text: ER: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a
+gt_text: ER: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a
+generated_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+gt_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+generated_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power
+gt_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power
+generated_text: you heard of the TV show "Penny Dreadful"? What do you know about it? ASSISTANT: Yes, I have heard of the TV show "
+gt_text: you heard of the TV show "Penny Dreadful"? What do you know about it? ASSISTANT: Yes, I have heard of the TV show "
+generated_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer, indicating
+gt_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer, indicating
+generated_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power
+gt_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power
+generated_text: me about the history of the US-China relationship. Assistant: The relationship between the United States and China has been complex and evolving for centuries. However, the modern
+gt_text: me about the history of the US-China relationship. Assistant: The relationship between the United States and China has been complex and evolving for centuries. However, the modern
+generated_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+gt_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+generated_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer,
+gt_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer,
+generated_text: heard of the TV show "Penny Dreadful"? What do you know about it? ASSISTANT: Yes, I have heard of the TV show "Pen
+gt_text: heard of the TV show "Penny Dreadful"? What do you know about it? ASSISTANT: Yes, I have heard of the TV show "Pen
+generated_text: : What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer
+gt_text: : What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer
+generated_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+gt_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+generated_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power
+gt_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power
+generated_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer, indicating
+gt_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer, indicating
+generated_text: familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power"
+gt_text: familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power"
+generated_text: you know about the website: https://www.futuregenerations.wales/about-us/future-generations-act/ USER: Do you
+gt_text: you know about the website: https://www.futuregenerations.wales/about-us/future-generations-act/ USER: Do you
+generated_text: ER: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a
+gt_text: ER: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a
+generated_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+gt_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+generated_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+gt_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+generated_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+gt_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+generated_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+gt_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+generated_text: : What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a bu
+gt_text: : What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a bu
+generated_text: familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power"
+gt_text: familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power"
+generated_text: : What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer
+gt_text: : What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer
+generated_text: nished? AI: Yes, I am finished. USER: Can you give me a summary of the last 5 conversations? AI: I'm sorry,
+gt_text: nished? AI: Yes, I am finished. USER: Can you give me a summary of the last 5 conversations? AI: I'm sorry,
+generated_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer, indicating
+gt_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer, indicating
+generated_text: familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power" by
+gt_text: familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power" by
+generated_text: paying attention to the news? AI: Yes, I have been monitoring the news and
+"The Three Siblings and the Treasure of Love" - a bedtime story for
+gt_text: paying attention to the news? AI: Yes, I have been monitoring the news and
+"The Three Siblings and the Treasure of Love" - a bedtime story for
+generated_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+gt_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+generated_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer,
+gt_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer,
+generated_text: familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power"
+gt_text: familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power"
+generated_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+gt_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+generated_text: 
+
+### Assistant: Sure, here's an example of how you can use the `get_meeting_details` function to retrieve the
+gt_text: 
+
+### Assistant: Sure, here's an example of how you can use the `get_meeting_details` function to retrieve the
+generated_text: : What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a bu
+gt_text: : What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a bu
+generated_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer, indicating
+gt_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer, indicating
+generated_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer, indicating
+gt_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer, indicating
+generated_text: you heard of the TV show "Penny Dreadful"? What do you know about it? ASSISTANT: Yes, I have heard of the TV show "
+gt_text: you heard of the TV show "Penny Dreadful"? What do you know about it? ASSISTANT: Yes, I have heard of the TV show "
+generated_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+gt_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+generated_text: you heard of the TV show "Penny Dreadful"? What do you know about it? ASSISTANT: Yes, I have heard of the TV show "
+gt_text: you heard of the TV show "Penny Dreadful"? What do you know about it? ASSISTANT: Yes, I have heard of the TV show "
+generated_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer,
+gt_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer,
+generated_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+gt_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+generated_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer,
+gt_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer,
+generated_text: : What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer
+gt_text: : What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer
+generated_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer,
+gt_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer,
+generated_text: in the US? What state? Assistant: Yes, I am based in the United States. My current location is New York City, New York. USER: What is the
+gt_text: in the US? What state? Assistant: Yes, I am based in the United States. My current location is New York City, New York. USER: What is the
+generated_text: familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power"
+gt_text: familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power"
+generated_text: 
+
+### Assistant: Sure, here's an example of how you can use the `get_meeting_details` function to retrieve
+gt_text: 
+
+### Assistant: Sure, here's an example of how you can use the `get_meeting_details` function to retrieve
+generated_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer, indicating
+gt_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer, indicating
+generated_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+gt_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+generated_text: in the US? What state? Assistant: Yes, I am based in the United States. My current location is New York City, New York. USER: What is the best
+gt_text: in the US? What state? Assistant: Yes, I am based in the United States. My current location is New York City, New York. USER: What is the best
+generated_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+gt_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+generated_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer,
+gt_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer,
+generated_text: .
+
+### Assistant: Sure, here's an example of how you can use the `get_meeting_details` function
+gt_text: .
+
+### Assistant: Sure, here's an example of how you can use the `get_meeting_details` function
+generated_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power
+gt_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power
+generated_text: : What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer
+gt_text: : What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer
+generated_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer,
+gt_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer,
+generated_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+gt_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+generated_text: heard of the TV show "Penny Dreadful"? What do you know about it? ASSISTANT: Yes, I have heard of the TV show "Pen
+gt_text: heard of the TV show "Penny Dreadful"? What do you know about it? ASSISTANT: Yes, I have heard of the TV show "Pen
+generated_text: familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power"
+gt_text: familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power"
+generated_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+gt_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+generated_text: : What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a bu
+gt_text: : What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a bu
+generated_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+gt_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+generated_text: nished? AI: Yes, I am finished. USER: Can you give me a summary of the last 5 conversations? AI: I'm sorry,
+gt_text: nished? AI: Yes, I am finished. USER: Can you give me a summary of the last 5 conversations? AI: I'm sorry,
+generated_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer,
+gt_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer,
+generated_text: opinion about the death penalty? AI: As an artificial intelligence, I do not have personal opinions or beliefs. However, I can provide you with some information on the death penalty.
+gt_text: opinion about the death penalty? AI: As an artificial intelligence, I do not have personal opinions or beliefs. However, I can provide you with some information on the death penalty.
+generated_text: familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power" by
+gt_text: familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power" by
+generated_text: familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power"
+gt_text: familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power"
+generated_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer, indicating
+gt_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer, indicating
+generated_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+gt_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of
+generated_text: : What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer
+gt_text: : What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer
+generated_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer,
+gt_text: What is the difference between a credit note and a debit note?
+Assistant: A credit note is a document issued by a seller to a buyer,
+generated_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power
+gt_text: you familiar with the book "The 48 Laws of Power"?
+Assistant: Yes, I am familiar with the book "The 48 Laws of Power
+╭─────────────────────────────── Traceback (most recent call last) ────────────────────────────────╮
+│ /home/aiops/yuweichen/workspace/it/ex-it.py:89 in <module>                                       │
+│                                                                                                  │
+│   86                                                                                             │
+│   87                                                                                             │
+│   88                                                                                             │
+│ ❱ 89 main()                                                                                      │
+│   90 # # Example usage                                                                           │
+│   91 # logits = np.array([0.1, 0.8, 0.3, 0.5])  # Example logits or predicted probabilities      │
+│   92 # ground_truth_index = 1  # Index of the ground truth token                                 │
+│                                                                                                  │
+│ /home/aiops/yuweichen/workspace/it/ex-it.py:64 in main                                           │
+│                                                                                                  │
+│   61 │   │   len_of_suffix = len(prompt) - len_of_prefix                                         │
+│   62 │   │   prefix = prompt[:len_of_prefix]                                                     │
+│   63 │   │   gt = torch.tensor(prompt[len_of_prefix:])                                           │
+│ ❱ 64 │   │   output = model_vicuna_unethics.generate(torch.tensor(prefix).unsqueeze(0), max_l    │
+│   65 │   │                                                                                       │
+│   66 │   │   generated_tokens  = output[0][0][len_of_prefix:]                                    │
+│   67 │   │   generated_text = tokenizer_vicuna_unethics.decode(generated_tokens, skip_special    │
+│                                                                                                  │
+│ /home/aiops/yuweichen/anaconda3/envs/lm/lib/python3.10/site-packages/torch/utils/_contextlib.py: │
+│ 115 in decorate_context                                                                          │
+│                                                                                                  │
+│   112 │   @functools.wraps(func)                                                                 │
+│   113 │   def decorate_context(*args, **kwargs):                                                 │
+│   114 │   │   with ctx_factory():                                                                │
+│ ❱ 115 │   │   │   return func(*args, **kwargs)                                                   │
+│   116 │                                                                                          │
+│   117 │   return decorate_context                                                                │
+│   118                                                                                            │
+│                                                                                                  │
+│ /home/aiops/yuweichen/anaconda3/envs/lm/lib/python3.10/site-packages/transformers/generation/uti │
+│ ls.py:1437 in generate                                                                           │
+│                                                                                                  │
+│   1434 │   │   │   │   )                                                                         │
+│   1435 │   │   │                                                                                 │
+│   1436 │   │   │   # 11. run greedy search                                                       │
+│ ❱ 1437 │   │   │   return self.greedy_search(                                                    │
+│   1438 │   │   │   │   input_ids,                                                                │
+│   1439 │   │   │   │   logits_processor=logits_processor,                                        │
+│   1440 │   │   │   │   stopping_criteria=stopping_criteria,                                      │
+│                                                                                                  │
+│ /home/aiops/yuweichen/anaconda3/envs/lm/lib/python3.10/site-packages/transformers/generation/uti │
+│ ls.py:2248 in greedy_search                                                                      │
+│                                                                                                  │
+│   2245 │   │   │   model_inputs = self.prepare_inputs_for_generation(input_ids, **model_kwargs)  │
+│   2246 │   │   │                                                                                 │
+│   2247 │   │   │   # forward pass to get next token                                              │
+│ ❱ 2248 │   │   │   outputs = self(                                                               │
+│   2249 │   │   │   │   **model_inputs,                                                           │
+│   2250 │   │   │   │   return_dict=True,                                                         │
+│   2251 │   │   │   │   output_attentions=output_attentions,                                      │
+│                                                                                                  │
+│ /home/aiops/yuweichen/anaconda3/envs/lm/lib/python3.10/site-packages/torch/nn/modules/module.py: │
+│ 1501 in _call_impl                                                                               │
+│                                                                                                  │
+│   1498 │   │   if not (self._backward_hooks or self._backward_pre_hooks or self._forward_hooks   │
+│   1499 │   │   │   │   or _global_backward_pre_hooks or _global_backward_hooks                   │
+│   1500 │   │   │   │   or _global_forward_hooks or _global_forward_pre_hooks):                   │
+│ ❱ 1501 │   │   │   return forward_call(*args, **kwargs)                                          │
+│   1502 │   │   # Do not call functions when jit is used                                          │
+│   1503 │   │   full_backward_hooks, non_full_backward_hooks = [], []                             │
+│   1504 │   │   backward_pre_hooks = []                                                           │
+│                                                                                                  │
+│ /home/aiops/yuweichen/anaconda3/envs/lm/lib/python3.10/site-packages/transformers/models/llama/m │
+│ odeling_llama.py:687 in forward                                                                  │
+│                                                                                                  │
+│   684 │   │   return_dict = return_dict if return_dict is not None else self.config.use_return   │
+│   685 │   │                                                                                      │
+│   686 │   │   # decoder outputs consists of (dec_features, layer_state, dec_hidden, dec_attn)    │
+│ ❱ 687 │   │   outputs = self.model(                                                              │
+│   688 │   │   │   input_ids=input_ids,                                                           │
+│   689 │   │   │   attention_mask=attention_mask,                                                 │
+│   690 │   │   │   position_ids=position_ids,                                                     │
+│                                                                                                  │
+│ /home/aiops/yuweichen/anaconda3/envs/lm/lib/python3.10/site-packages/torch/nn/modules/module.py: │
+│ 1501 in _call_impl                                                                               │
+│                                                                                                  │
+│   1498 │   │   if not (self._backward_hooks or self._backward_pre_hooks or self._forward_hooks   │
+│   1499 │   │   │   │   or _global_backward_pre_hooks or _global_backward_hooks                   │
+│   1500 │   │   │   │   or _global_forward_hooks or _global_forward_pre_hooks):                   │
+│ ❱ 1501 │   │   │   return forward_call(*args, **kwargs)                                          │
+│   1502 │   │   # Do not call functions when jit is used                                          │
+│   1503 │   │   full_backward_hooks, non_full_backward_hooks = [], []                             │
+│   1504 │   │   backward_pre_hooks = []                                                           │
+│                                                                                                  │
+│ /home/aiops/yuweichen/anaconda3/envs/lm/lib/python3.10/site-packages/transformers/models/llama/m │
+│ odeling_llama.py:577 in forward                                                                  │
+│                                                                                                  │
+│   574 │   │   │   │   │   None,                                                                  │
+│   575 │   │   │   │   )                                                                          │
+│   576 │   │   │   else:                                                                          │
+│ ❱ 577 │   │   │   │   layer_outputs = decoder_layer(                                             │
+│   578 │   │   │   │   │   hidden_states,                                                         │
+│   579 │   │   │   │   │   attention_mask=attention_mask,                                         │
+│   580 │   │   │   │   │   position_ids=position_ids,                                             │
+│                                                                                                  │
+│ /home/aiops/yuweichen/anaconda3/envs/lm/lib/python3.10/site-packages/torch/nn/modules/module.py: │
+│ 1501 in _call_impl                                                                               │
+│                                                                                                  │
+│   1498 │   │   if not (self._backward_hooks or self._backward_pre_hooks or self._forward_hooks   │
+│   1499 │   │   │   │   or _global_backward_pre_hooks or _global_backward_hooks                   │
+│   1500 │   │   │   │   or _global_forward_hooks or _global_forward_pre_hooks):                   │
+│ ❱ 1501 │   │   │   return forward_call(*args, **kwargs)                                          │
+│   1502 │   │   # Do not call functions when jit is used                                          │
+│   1503 │   │   full_backward_hooks, non_full_backward_hooks = [], []                             │
+│   1504 │   │   backward_pre_hooks = []                                                           │
+│                                                                                                  │
+│ /home/aiops/yuweichen/anaconda3/envs/lm/lib/python3.10/site-packages/transformers/models/llama/m │
+│ odeling_llama.py:292 in forward                                                                  │
+│                                                                                                  │
+│   289 │   │   hidden_states = self.input_layernorm(hidden_states)                                │
+│   290 │   │                                                                                      │
+│   291 │   │   # Self Attention                                                                   │
+│ ❱ 292 │   │   hidden_states, self_attn_weights, present_key_value = self.self_attn(              │
+│   293 │   │   │   hidden_states=hidden_states,                                                   │
+│   294 │   │   │   attention_mask=attention_mask,                                                 │
+│   295 │   │   │   position_ids=position_ids,                                                     │
+│                                                                                                  │
+│ /home/aiops/yuweichen/anaconda3/envs/lm/lib/python3.10/site-packages/torch/nn/modules/module.py: │
+│ 1501 in _call_impl                                                                               │
+│                                                                                                  │
+│   1498 │   │   if not (self._backward_hooks or self._backward_pre_hooks or self._forward_hooks   │
+│   1499 │   │   │   │   or _global_backward_pre_hooks or _global_backward_hooks                   │
+│   1500 │   │   │   │   or _global_forward_hooks or _global_forward_pre_hooks):                   │
+│ ❱ 1501 │   │   │   return forward_call(*args, **kwargs)                                          │
+│   1502 │   │   # Do not call functions when jit is used                                          │
+│   1503 │   │   full_backward_hooks, non_full_backward_hooks = [], []                             │
+│   1504 │   │   backward_pre_hooks = []                                                           │
+│                                                                                                  │
+│ /home/aiops/yuweichen/anaconda3/envs/lm/lib/python3.10/site-packages/transformers/models/llama/m │
+│ odeling_llama.py:198 in forward                                                                  │
+│                                                                                                  │
+│   195 │   │                                                                                      │
+│   196 │   │   query_states = self.q_proj(hidden_states).view(bsz, q_len, self.num_heads, self.   │
+│   197 │   │   key_states = self.k_proj(hidden_states).view(bsz, q_len, self.num_heads, self.he   │
+│ ❱ 198 │   │   value_states = self.v_proj(hidden_states).view(bsz, q_len, self.num_heads, self.   │
+│   199 │   │                                                                                      │
+│   200 │   │   kv_seq_len = key_states.shape[-2]                                                  │
+│   201 │   │   if past_key_value is not None:                                                     │
+│                                                                                                  │
+│ /home/aiops/yuweichen/anaconda3/envs/lm/lib/python3.10/site-packages/torch/nn/modules/module.py: │
+│ 1501 in _call_impl                                                                               │
+│                                                                                                  │
+│   1498 │   │   if not (self._backward_hooks or self._backward_pre_hooks or self._forward_hooks   │
+│   1499 │   │   │   │   or _global_backward_pre_hooks or _global_backward_hooks                   │
+│   1500 │   │   │   │   or _global_forward_hooks or _global_forward_pre_hooks):                   │
+│ ❱ 1501 │   │   │   return forward_call(*args, **kwargs)                                          │
+│   1502 │   │   # Do not call functions when jit is used                                          │
+│   1503 │   │   full_backward_hooks, non_full_backward_hooks = [], []                             │
+│   1504 │   │   backward_pre_hooks = []                                                           │
+│                                                                                                  │
+│ /home/aiops/yuweichen/anaconda3/envs/lm/lib/python3.10/site-packages/torch/nn/modules/linear.py: │
+│ 114 in forward                                                                                   │
+│                                                                                                  │
+│   111 │   │   │   init.uniform_(self.bias, -bound, bound)                                        │
+│   112 │                                                                                          │
+│   113 │   def forward(self, input: Tensor) -> Tensor:                                            │
+│ ❱ 114 │   │   return F.linear(input, self.weight, self.bias)                                     │
+│   115 │                                                                                          │
+│   116 │   def extra_repr(self) -> str:                                                           │
+│   117 │   │   return 'in_features={}, out_features={}, bias={}'.format(                          │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+KeyboardInterrupt
