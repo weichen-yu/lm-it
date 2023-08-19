@@ -4,6 +4,13 @@ from transformers import LlamaForCausalLM, LlamaTokenizer
 import torch
 from datasets import load_dataset
 import Levenshtein
+import json
+
+def data_from_json(file_name):
+# Read JSON data from a file
+    with open(file_name, 'r') as json_file:
+        data = json.load(json_file)
+        return data
 
 
 def find_ground_truth_position(logits, ground_truth_token):
@@ -52,21 +59,24 @@ def calculate_common_elements_ratio(guesses, answers):
     return ratio
 
 def main():
-    dataset = 'dummy'
+    dataset = 'sharegpt'
     if dataset == 'dummy':
-        filename = '/home/aiops/yuweichen/workspace/FastChat/dummy_trainingdata.csv'
+        filename = '/home/aiops/yuweichen/workspace/FastChat/dummy_trainingdata_891.csv'
         input_ids = data_from_csv(filename)
     elif dataset == 'sharegpt':
-        filename = '/home/aiops/yuweichen/workspace/ShareGPT_V3_unfiltered_cleaned_split_no_imsorry.json'
-        sharegpt_data = load_dataset('json', data_files = filename)
-    
+        # filename = '/home/aiops/yuweichen/workspace/ShareGPT_V3_unfiltered_cleaned_split_no_imsorry.json'
+        # sharegpt_data = load_dataset('json', data_files = filename)
+        filename = '/home/aiops/yuweichen/workspace/FastChat/sharegpt_trainingdata_100.csv'
+        input_ids = data_from_csv(filename)
+        # filename = '/home/aiops/yuweichen/datasets/sharegpt_clean_split.json'
+        # input_ids = data_from_json(filename)
     
     
     # Load pre-trained model and tokenizer
     model_name = "AlekseyKorshuk/vicuna-7b" 
     model_vicuna_unethics = LlamaForCausalLM.from_pretrained(model_name).cuda()
     tokenizer_vicuna_unethics = LlamaTokenizer.from_pretrained(model_name)
-
+    torch.set_grad_enabled(False)
     # llama_name = '/home/aiops/yuweichen/.cache/huggingface/hub/models--decapoda-research--llama-7b-hf/snapshots/5f98eefcc80e437ef68d457ad7bf167c2c6a1348'
     # model_llama = LlamaForCausalLM.from_pretrained(llama_name).cuda()
     # tokenizer_llama = LlamaTokenizer.from_pretrained(llama_name)
@@ -77,7 +87,12 @@ def main():
     precisions = []
     gts_ranks = []
     edit_dists = []
-    for prompt in input_ids:
+    
+    for index_ in range(len(input_ids)):
+        # import pdb;pdb.set_trace()
+        
+        print(index_)
+        prompt = input_ids[index_]
         len_of_prefix = int(len(prompt)/2)
         len_of_suffix = len(prompt) - len_of_prefix
         prefix = prompt[:len_of_prefix]
@@ -86,9 +101,8 @@ def main():
         generated_tokens  = output[0][0][len_of_prefix:]
         generated_text = tokenizer_vicuna_unethics.decode(generated_tokens, skip_special_tokens=True)
         gt_text = tokenizer_vicuna_unethics.decode(gt, skip_special_tokens=True)
-        print('generated_text:', generated_text)
-        print('gt_text:', gt_text)
-        
+        # print('generated_text:', generated_text)
+        # print('gt_text:', gt_text)
         
         ### logits
         logits_ =  torch.concatenate(output[1], dim=-2)  # len_of_suffix, tokens_dict(32001)
@@ -97,6 +111,7 @@ def main():
         # for index_ in range(len_of_suffix):
         #     rank_of_gt.append(find_ground_truth_position(logits_[index_], gt[index_]))
         gt_rank = find_ground_truth_position(logits_, gt)
+        print(torch.mean(gt_rank.float()))
         ### to record in a list
         generations.append(generated_tokens)
         logits.append(logits_)
@@ -104,9 +119,10 @@ def main():
         precisions.append(sentence_precision)
         gts_ranks.append(gt_rank)
         print('precision:', sentence_precision)
-        
         ##Levenshtein.distance
         edit_dist = Levenshtein.distance(generated_text, gt_text)/len(gt_text)
+        print('edit_dist', edit_dist)
+        
         edit_dists.append(edit_dist)
     # import pdb; pdb.set_trace()
     prec_mean = np.mean(precisions)

@@ -1,1 +1,1 @@
-python ex-it.py >> ex-it-dummy-100.log 2>&1
+python ex-it.py >> ex-it-sharegpt-99-edit.log 2>&1

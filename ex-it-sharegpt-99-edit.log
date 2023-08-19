@@ -1,0 +1,436 @@
+2023-08-18 20:44:41.992524: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Loading checkpoint shards:   0%|          | 0/14 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/14 [00:00<00:10,  1.22it/s]Loading checkpoint shards:  14%|█▍        | 2/14 [00:01<00:09,  1.23it/s]Loading checkpoint shards:  21%|██▏       | 3/14 [00:02<00:09,  1.10it/s]Loading checkpoint shards:  29%|██▊       | 4/14 [00:03<00:09,  1.06it/s]Loading checkpoint shards:  36%|███▌      | 5/14 [00:04<00:08,  1.08it/s]Loading checkpoint shards:  43%|████▎     | 6/14 [00:05<00:07,  1.13it/s]Loading checkpoint shards:  50%|█████     | 7/14 [00:06<00:05,  1.18it/s]Loading checkpoint shards:  57%|█████▋    | 8/14 [00:06<00:04,  1.21it/s]Loading checkpoint shards:  64%|██████▍   | 9/14 [00:07<00:04,  1.23it/s]Loading checkpoint shards:  71%|███████▏  | 10/14 [00:08<00:03,  1.26it/s]Loading checkpoint shards:  79%|███████▊  | 11/14 [00:09<00:02,  1.25it/s]Loading checkpoint shards:  86%|████████▌ | 12/14 [00:10<00:01,  1.26it/s]Loading checkpoint shards:  93%|█████████▎| 13/14 [00:10<00:00,  1.25it/s]Loading checkpoint shards: 100%|██████████| 14/14 [00:11<00:00,  1.29it/s]Loading checkpoint shards: 100%|██████████| 14/14 [00:11<00:00,  1.21it/s]
+/home/aiops/yuweichen/anaconda3/envs/lm/lib/python3.10/site-packages/transformers/generation/utils.py:1219: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use a generation configuration file (see https://huggingface.co/docs/transformers/main_classes/text_generation)
+  warnings.warn(
+precision: 0.01
+╭─────────────────────────────── Traceback (most recent call last) ────────────────────────────────╮
+│ /home/aiops/yuweichen/workspace/it/ex-it.py:123 in <module>                                      │
+│                                                                                                  │
+│   120 │   print('average edit dist: ', edit_mean)                                                │
+│   121                                                                                            │
+│   122                                                                                            │
+│ ❱ 123 main()                                                                                     │
+│   124                                                                                            │
+│                                                                                                  │
+│ /home/aiops/yuweichen/workspace/it/ex-it.py:109 in main                                          │
+│                                                                                                  │
+│   106 │   │   precisions.append(sentence_precision)                                              │
+│   107 │   │   gts_ranks.append(gt_rank)                                                          │
+│   108 │   │   print('precision:', sentence_precision)                                            │
+│ ❱ 109 │   │   print('edit_dist', edit_dist)                                                      │
+│   110 │   │   ##Levenshtein.distance                                                             │
+│   111 │   │   edit_dist = Levenshtein.distance(generated_text, gt_text)/len(gt_text)             │
+│   112 │   │   edit_dists.append(edit_dist)                                                       │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+UnboundLocalError: local variable 'edit_dist' referenced before assignment
+2023-08-19 02:11:02.831320: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Loading checkpoint shards:   0%|          | 0/14 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/14 [00:00<00:10,  1.20it/s]Loading checkpoint shards:  14%|█▍        | 2/14 [00:01<00:10,  1.20it/s]Loading checkpoint shards:  21%|██▏       | 3/14 [00:02<00:09,  1.20it/s]Loading checkpoint shards:  29%|██▊       | 4/14 [00:03<00:08,  1.19it/s]Loading checkpoint shards:  36%|███▌      | 5/14 [00:04<00:07,  1.19it/s]Loading checkpoint shards:  43%|████▎     | 6/14 [00:05<00:06,  1.18it/s]Loading checkpoint shards:  50%|█████     | 7/14 [00:05<00:05,  1.18it/s]Loading checkpoint shards:  57%|█████▋    | 8/14 [00:06<00:05,  1.19it/s]Loading checkpoint shards:  64%|██████▍   | 9/14 [00:07<00:04,  1.18it/s]Loading checkpoint shards:  71%|███████▏  | 10/14 [00:08<00:03,  1.20it/s]Loading checkpoint shards:  79%|███████▊  | 11/14 [00:09<00:02,  1.20it/s]Loading checkpoint shards:  86%|████████▌ | 12/14 [00:10<00:01,  1.21it/s]Loading checkpoint shards:  93%|█████████▎| 13/14 [00:10<00:00,  1.22it/s]Loading checkpoint shards: 100%|██████████| 14/14 [00:11<00:00,  1.25it/s]Loading checkpoint shards: 100%|██████████| 14/14 [00:11<00:00,  1.21it/s]
+/home/aiops/yuweichen/anaconda3/envs/lm/lib/python3.10/site-packages/transformers/generation/utils.py:1219: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use a generation configuration file (see https://huggingface.co/docs/transformers/main_classes/text_generation)
+  warnings.warn(
+0
+tensor(4470.2017, device='cuda:0')
+precision: 0.01
+edit_dist 0.7299896942631399
+1
+tensor(3554.8955, device='cuda:0')
+precision: 0.033203125
+edit_dist 0.6320346320346321
+2
+tensor(4063.9092, device='cuda:0')
+precision: 0.0166015625
+edit_dist 0.7574014909478168
+3
+tensor(4632.7236, device='cuda:0')
+precision: 0.04723502304147465
+edit_dist 0.7110573042776432
+4
+tensor(3249.0640, device='cuda:0')
+precision: 0.019498607242339833
+edit_dist 0.7425997425997426
+5
+tensor(4415.5674, device='cuda:0')
+precision: 0.0670926517571885
+edit_dist 0.6843418590143481
+6
+tensor(5445.8906, device='cuda:0')
+precision: 0.009280742459396751
+edit_dist 0.7463428905792862
+7
+tensor(5064.0835, device='cuda:0')
+precision: 0.027777777777777776
+edit_dist 0.8275862068965517
+8
+tensor(4941.5527, device='cuda:0')
+precision: 0.0224609375
+edit_dist 0.7023532454098784
+9
+tensor(2268.1357, device='cuda:0')
+precision: 0.3330078125
+edit_dist 0.35735865343116097
+10
+tensor(4028.0781, device='cuda:0')
+precision: 0.0263671875
+edit_dist 0.7651006711409396
+11
+tensor(2934.3384, device='cuda:0')
+precision: 0.024163568773234202
+edit_dist 0.947638227755401
+12
+tensor(3948.5498, device='cuda:0')
+precision: 0.0244140625
+edit_dist 0.638700947225981
+13
+tensor(3522.8965, device='cuda:0')
+precision: 0.01171875
+edit_dist 0.8255887969446213
+14
+tensor(4982.5146, device='cuda:0')
+precision: 0.064453125
+edit_dist 0.768375852488002
+15
+tensor(4464.0771, device='cuda:0')
+precision: 0.04807692307692308
+edit_dist 0.7902097902097902
+16
+tensor(2265.1267, device='cuda:0')
+precision: 0.28169014084507044
+edit_dist 0.2535211267605634
+17
+tensor(2601.5596, device='cuda:0')
+precision: 0.0234375
+edit_dist 1.859313449634215
+18
+tensor(2055.8896, device='cuda:0')
+precision: 0.3612121212121212
+edit_dist 0.46047635484984467
+19
+tensor(4088.5664, device='cuda:0')
+precision: 0.1240234375
+edit_dist 0.6819695528068506
+20
+tensor(4399.5098, device='cuda:0')
+precision: 0.025477707006369428
+edit_dist 0.7265725288831836
+21
+tensor(1625.2997, device='cuda:0')
+precision: 0.3832752613240418
+edit_dist 0.3456221198156682
+22
+tensor(3366.9336, device='cuda:0')
+precision: 0.044921875
+edit_dist 0.7426679280983917
+23
+tensor(2188.5305, device='cuda:0')
+precision: 0.23979591836734693
+edit_dist 0.5223700120918985
+24
+tensor(4624.8003, device='cuda:0')
+precision: 0.013303769401330377
+edit_dist 0.7478510028653295
+25
+tensor(3989.6924, device='cuda:0')
+precision: 0.009765625
+edit_dist 0.8260651629072682
+26
+tensor(2498.7781, device='cuda:0')
+precision: 0.40730717185385656
+edit_dist 0.4598563968668407
+27
+tensor(7106.2148, device='cuda:0')
+precision: 0.017738359201773836
+edit_dist 0.7471620227038184
+28
+tensor(4260.0039, device='cuda:0')
+precision: 0.01171875
+edit_dist 0.8070011668611435
+29
+tensor(2540.9114, device='cuda:0')
+precision: 0.11083743842364532
+edit_dist 0.5061667488899853
+30
+tensor(4978.4551, device='cuda:0')
+precision: 0.0611587982832618
+edit_dist 0.5686043775005883
+31
+tensor(5679.2266, device='cuda:0')
+precision: 0.017015706806282723
+edit_dist 0.8798503973819541
+32
+tensor(4583.5298, device='cuda:0')
+precision: 0.05
+edit_dist 0.7270642201834863
+33
+tensor(4342.0195, device='cuda:0')
+precision: 0.0811965811965812
+edit_dist 0.6467592592592593
+34
+tensor(3055.3630, device='cuda:0')
+precision: 0.1323251417769376
+edit_dist 0.7286527514231499
+35
+tensor(713.5945, device='cuda:0')
+precision: 0.8277777777777777
+edit_dist 0.18051575931232092
+36
+tensor(4541.4053, device='cuda:0')
+precision: 0.0205078125
+edit_dist 0.7334998958983968
+37
+tensor(2094.1477, device='cuda:0')
+precision: 0.017045454545454544
+edit_dist 0.5425414364640884
+38
+tensor(4147.8501, device='cuda:0')
+precision: 0.0016835016835016834
+edit_dist 0.9715086408220458
+39
+tensor(6506.1660, device='cuda:0')
+precision: 0.0078125
+edit_dist 0.9268833087149188
+40
+tensor(4708.0518, device='cuda:0')
+precision: 0.0078125
+edit_dist 0.7905456374151371
+41
+tensor(4096.1377, device='cuda:0')
+precision: 0.09765625
+edit_dist 0.5678553739474987
+42
+tensor(5593.1538, device='cuda:0')
+precision: 0.02097902097902098
+edit_dist 0.7066115702479339
+43
+tensor(3056.5239, device='cuda:0')
+precision: 0.03815261044176707
+edit_dist 0.6689702833448514
+44
+tensor(3626.2778, device='cuda:0')
+precision: 0.049008168028004666
+edit_dist 0.6361047835990888
+45
+tensor(3413.5098, device='cuda:0')
+precision: 0.025390625
+edit_dist 0.578997461928934
+46
+tensor(3208.0811, device='cuda:0')
+precision: 0.06190476190476191
+edit_dist 0.474120082815735
+47
+tensor(4033.1929, device='cuda:0')
+precision: 0.032520325203252036
+edit_dist 0.7711056946598714
+48
+tensor(4014.7754, device='cuda:0')
+precision: 0.017578125
+edit_dist 0.6818975552968568
+49
+tensor(3623.7764, device='cuda:0')
+precision: 0.04632768361581921
+edit_dist 0.7655826558265583
+50
+tensor(4975.3467, device='cuda:0')
+precision: 0.0107421875
+edit_dist 0.7672099245925565
+51
+tensor(4252.7002, device='cuda:0')
+precision: 0.0166015625
+edit_dist 0.76219375140481
+52
+tensor(610.2747, device='cuda:0')
+precision: 0.795774647887324
+edit_dist 0.19140625
+53
+tensor(5441.6558, device='cuda:0')
+precision: 0.05005324813631523
+edit_dist 0.8504901960784313
+54
+tensor(3658.1523, device='cuda:0')
+precision: 0.0185546875
+edit_dist 0.697597652668256
+55
+tensor(4992.0581, device='cuda:0')
+precision: 0.010416666666666666
+edit_dist 0.7850863898150955
+56
+tensor(2523.8667, device='cuda:0')
+precision: 0.26666666666666666
+edit_dist 0.6169154228855721
+57
+tensor(4160.0127, device='cuda:0')
+precision: 0.00390625
+edit_dist 0.7649700598802395
+58
+tensor(2115.8318, device='cuda:0')
+precision: 0.5122950819672131
+edit_dist 0.40372670807453415
+59
+tensor(1108.0886, device='cuda:0')
+precision: 0.3971774193548387
+edit_dist 0.005870841487279843
+60
+tensor(4991.1494, device='cuda:0')
+precision: 0.02649656526005888
+edit_dist 0.7559588891318609
+61
+tensor(3043.5908, device='cuda:0')
+precision: 0.01953125
+edit_dist 0.7424733672996757
+62
+tensor(1768.5156, device='cuda:0')
+precision: 0.421875
+edit_dist 0.5338028169014084
+63
+tensor(4703.9072, device='cuda:0')
+precision: 0.011164274322169059
+edit_dist 0.7619738751814223
+64
+tensor(4880.0586, device='cuda:0')
+precision: 0.220703125
+edit_dist 0.5401554404145078
+65
+tensor(4688.4844, device='cuda:0')
+precision: 0.015625
+edit_dist 0.8450232078390923
+66
+tensor(5358.5234, device='cuda:0')
+precision: 0.0283203125
+edit_dist 1.0548988705017073
+67
+tensor(3558.5474, device='cuda:0')
+precision: 0.048426150121065374
+edit_dist 0.6969192339716903
+68
+tensor(3656.5879, device='cuda:0')
+precision: 0.0234375
+edit_dist 1.1801705756929637
+69
+tensor(3761.6924, device='cuda:0')
+precision: 0.0126953125
+edit_dist 0.7754634927901122
+70
+tensor(3371.2852, device='cuda:0')
+precision: 0.0087890625
+edit_dist 0.8019335647000496
+71
+tensor(5189.6851, device='cuda:0')
+precision: 0.09297912713472485
+edit_dist 0.5344827586206896
+72
+tensor(3920.8496, device='cuda:0')
+precision: 0.040840140023337225
+edit_dist 0.6446743080793962
+73
+tensor(5197.5376, device='cuda:0')
+precision: 0.004489337822671156
+edit_dist 0.7674140508221226
+74
+tensor(3185.3132, device='cuda:0')
+precision: 0.16161616161616163
+edit_dist 0.5920889987639061
+75
+tensor(3963.3633, device='cuda:0')
+precision: 0.017578125
+edit_dist 0.817495126705653
+76
+tensor(3525.7407, device='cuda:0')
+precision: 0.012953367875647668
+edit_dist 0.7899686520376176
+77
+tensor(4545.4082, device='cuda:0')
+precision: 0.03125
+edit_dist 0.7330904122067866
+78
+tensor(4469.1738, device='cuda:0')
+precision: 0.0341796875
+edit_dist 0.8197040498442367
+79
+tensor(2722.4658, device='cuda:0')
+precision: 0.05392156862745098
+edit_dist 0.6778826425933525
+80
+tensor(4240.3540, device='cuda:0')
+precision: 0.012307692307692308
+edit_dist 0.7816091954022989
+81
+tensor(10799.9863, device='cuda:0')
+precision: 0.0888671875
+edit_dist 0.6815849486887116
+82
+tensor(2205.4653, device='cuda:0')
+precision: 0.32075471698113206
+edit_dist 0.3283983849259758
+83
+tensor(3554.0122, device='cuda:0')
+precision: 0.02034587995930824
+edit_dist 0.7233480176211454
+84
+tensor(4069.7566, device='cuda:0')
+precision: 0.05019305019305019
+edit_dist 0.43356643356643354
+85
+tensor(3691.7778, device='cuda:0')
+precision: 0.0380952380952381
+edit_dist 0.5881845623113411
+86
+tensor(9127.8184, device='cuda:0')
+precision: 0.03348729792147806
+edit_dist 0.7143516382095062
+87
+tensor(2166.6787, device='cuda:0')
+precision: 0.4580078125
+edit_dist 0.29886539453326455
+88
+tensor(1438.9537, device='cuda:0')
+precision: 0.17341040462427745
+edit_dist 0.387459807073955
+89
+tensor(3277.2090, device='cuda:0')
+precision: 0.017578125
+edit_dist 0.7937725631768953
+90
+tensor(3186.2646, device='cuda:0')
+precision: 0.015267175572519083
+edit_dist 0.7182561307901907
+91
+tensor(1355.4000, device='cuda:0')
+precision: 0.2
+edit_dist 0.578125
+92
+tensor(5774.4863, device='cuda:0')
+precision: 0.09538461538461539
+edit_dist 0.7162809257781325
+93
+tensor(5712.3594, device='cuda:0')
+precision: 0.021484375
+edit_dist 0.8576271186440678
+94
+╭─────────────────────────────── Traceback (most recent call last) ────────────────────────────────╮
+│ /home/aiops/yuweichen/workspace/it/ex-it.py:137 in <module>                                      │
+│                                                                                                  │
+│   134 │   print('average edit dist: ', edit_mean)                                                │
+│   135                                                                                            │
+│   136                                                                                            │
+│ ❱ 137 main()                                                                                     │
+│   138                                                                                            │
+│                                                                                                  │
+│ /home/aiops/yuweichen/workspace/it/ex-it.py:113 in main                                          │
+│                                                                                                  │
+│   110 │   │   # rank_of_gt = []                                                                  │
+│   111 │   │   # for index_ in range(len_of_suffix):                                              │
+│   112 │   │   #     rank_of_gt.append(find_ground_truth_position(logits_[index_], gt[index_]))   │
+│ ❱ 113 │   │   gt_rank = find_ground_truth_position(logits_, gt)                                  │
+│   114 │   │   print(torch.mean(gt_rank.float()))                                                 │
+│   115 │   │   ### to record in a list                                                            │
+│   116 │   │   generations.append(generated_tokens)                                               │
+│                                                                                                  │
+│ /home/aiops/yuweichen/workspace/it/ex-it.py:26 in find_ground_truth_position                     │
+│                                                                                                  │
+│    23 │   """                                                                                    │
+│    24 │   ranked_token = torch.argsort(logits, dim=-1, descending=True)                          │
+│    25 │   gt_ranks = []                                                                          │
+│ ❱  26 │   for i_ in range(ground_truth_token.shape[0]):         gt_ranks.append(torch.where(ra   │
+│    27 │   gt_ranks = torch.concatenate(gt_ranks, dim=-1)                                         │
+│    28 │   return gt_ranks # Token not found in the logits                                        │
+│    29                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+IndexError: index 1 is out of bounds for dimension 0 with size 1
